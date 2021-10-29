@@ -1,9 +1,11 @@
 <script setup lang="ts">
-    import { ref, defineEmits } from 'vue';
+    import { ref } from 'vue';
+
+    import useTodo from '@/composables/todo/useTodo';
+
+    const { addTodo } = useTodo();
 
     const todo = ref<string>('');
-
-    const emit = defineEmits(['addTodo']);
 
     const handleAddTodo = () => {
         if (!todo.value) {
@@ -17,7 +19,7 @@
             completed: false,
         };
 
-        emit('addTodo', newTodo);
+        addTodo(newTodo);
 
         todo.value = '';
     };

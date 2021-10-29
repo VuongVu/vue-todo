@@ -10,10 +10,13 @@
   "dependencies": {
     "@heroicons/vue": "^1.0.5",
     "tailwindcss": "^2.2.17",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.9.3",
+    "@types/node": "^16.11.6",
+    "@vitejs/plugin-legacy": "^1.6.2",
+    "@vitejs/plugin-vue": "^1.9.4",
     "autoprefixer": "^10.3.7",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -22,6 +25,8 @@
     "eslint-plugin-vue": "^7.20.0",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
-    "vite": "^2.6.4"
+    "typescript": "^4.4.4",
+    "vite": "^2.6.4",
+    "vue-tsc": "^0.28.10"
   }
 }
